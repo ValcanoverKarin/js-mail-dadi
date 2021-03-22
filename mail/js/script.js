@@ -3,7 +3,7 @@
 //stampa un messaggio appropriato sull’esito del controllo.
 
 //Chiedi all’utente la sua email
-var emailUtente = prompt ('inserisci la tua email');
+var emailUtente = prompt ('Inserisci la tua email');
 console.log(emailUtente);
 
 //lista email di chi può accedere
@@ -19,4 +19,11 @@ for (var i = 0; i < emailLista.length; i++) {
     if (emailUtente == emailCorrente) {
         emailTrovata = true;
     }  
+}
+
+//stampare il massaggio 
+if (emailTrovata == true) {
+    alert('Puoi accedere');
+} else {
+    alert('Non puoi accedere');
 }
